@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
-@Client.on_message(filters.command(["start", "start@ChannelBanRobot"]))
+@Client.on_message(filters.command(["stt", "stt@ChannelBanRobot"]))
 async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
